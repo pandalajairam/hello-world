@@ -88,7 +88,7 @@ public class TestEngineWeb {
 	public void beforeSuite(ITestContext ctx,String type,String suite) throws Throwable{
 		executionType=type;
 		suiteExecution=suite;
-		PropertyConfigurator.configure(System.getProperty("user.dir")+java.io.File.separator+"Log.properties");
+		PropertyConfigurator.configure(System.getProperty("user.dir")+"/Log.properties");
 		//ReportStampSupport.calculateSuiteStartTime();
 		//ObjectRepository.storeIdentification();
 		//ObjectRepository.storeValue();

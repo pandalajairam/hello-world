@@ -23,7 +23,7 @@ public class ExcelUtility {
 		try {
 			System.out.println("Test Data Sheet "+xls.path+xls.filename+System.getProperty("user.dir"));
 			String outputFileName = System.getProperty("user.dir")
-					+ "\\testng.xml";
+					+ "/testng.xml";
 
 			if (new File(outputFileName).exists()) {
 				System.out.println("Test suite exists in"

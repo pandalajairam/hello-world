@@ -22,7 +22,7 @@ import com.gargoylesoftware.htmlunit.javascript.host.file.File;
 
 public class Xls_Reader {
 	
-	public String filename = System.getProperty("user.dir")+java.io.File.separator+"TestData"+java.io.File.separator+"TestData.xls";
+	public String filename = System.getProperty("user.dir")+"/TestData/TestData.xls";
 	public  String path;
 	public  FileInputStream fis = null;
 	public  FileOutputStream fileOut =null;
