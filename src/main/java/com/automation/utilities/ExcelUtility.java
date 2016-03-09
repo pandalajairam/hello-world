@@ -21,7 +21,7 @@ public class ExcelUtility {
 			throws IOException {
 
 		try {
-			System.out.println("Test Data Sheet "+xls.path+xls.filename+System.getProperty("user.dir"));
+			System.out.println("Test Data Sheet "+xls.path+" "+xls.filename+" "+System.getProperty("user.dir"));
 			String outputFileName = System.getProperty("user.dir")
 					+ "/testng.xml";
 
@@ -41,7 +41,7 @@ public class ExcelUtility {
 			fos.write("<parameter name='executionType' value='Sequential' />\n");
 			
 			
-			fos.write("<listeners>\n");
+			fos.write("<listeners>\n"); 
 			
 			fos.write("\t<listener class-name=\"org.uncommons.reportng.HTMLReporter\" />\n");
 			fos.write("\t<listener class-name=\"org.uncommons.reportng.JUnitXMLReporter\" />\n");
